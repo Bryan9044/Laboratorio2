@@ -33,21 +33,30 @@
 
         <h2>Formulario de registro</h2>
         <form>
-            <label id="nombreLabel">Nombre personal</label>
-            <input type="text" name="nombreUsuario" placeholder="Nombre personal" aria-labelledby="nombreLabel">
-            <br>
-            <label id="correoLabel">Correo electrónico</label>
-            <input type="email" name="correo" placeholder="Correo electrónico" aria-labelledby="correoLabel">
-            <br>
-            <label for="genero">Género</label>
-            <select id="genero" name="GeneroUsuario">
-                <option value="masculino">Masculino</option>
-                <option value="femenino">Femenino</option>
-                <option value="NoIdentificado">Prefiero no decir</option>
-            </select>
-            <br>
-            <button type="submit">Registrarse</button>
+            <div>
+                <label for="nombre">Nombre personal</label>
+                <input type="text" id="nombre" name="nombreUsuario" placeholder="Nombre personal">
+            </div>
+        
+            <div>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico">
+            </div>
+        
+            <div>
+                <label for="genero">Género</label>
+                <select id="genero" name="GeneroUsuario">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="NoIdentificado">Prefiero no decir</option>
+                </select>
+            </div>
+        
+            <div>
+                <button type="submit">Registrarse</button>
+            </div>
         </form>
+
 
         <section id="seccion1">
             <h2>Full exclusive members</h2>
@@ -59,7 +68,7 @@
             <article>
                 <h3>Cadenas de mujer en oro</h3>
                 <figure>
-                    <img src="assets/imagenes/CadenaBolas.jpg" alt="Cadena de 15 cm con bolas doradas al rededor y una perla central envolviendolas" tabindex="0">
+                    <img src="assets/imagenes/CadenaBolas.jpg" alt="Cadena de mujer con perla central" tabindex="0">
                 </figure>
                 <p>Cadena de bolas en 18k</p>
             </article>
@@ -67,7 +76,7 @@
                 <h3>Cadenas de hombre</h3>
                 <p>Cadena en cordón chino 13MM</p>
                 <figure>
-                    <img src="assets/imagenes/CadenaCordonChino.jpg" alt="Cadena en cordón chino 13MM" tabindex="0">
+                    <img src="assets/imagenes/CadenaCordonChino.jpg" alt="Cadena de hombre con grosor de 13MM" tabindex="0">
                 </figure>
             </article>
         </section>
@@ -78,14 +87,14 @@
                 <h3>Pulseras de mujer en oro</h3>
                 <p>Pulseras estilo Cartier en 18k</p>
                 <figure>
-                    <img src="assets/imagenes/PulseraCartierClavo.jpg" alt="Pulsera Cartier circular con punta de Clavo en oro de 18k" tabindex="0">
+                    <img src="assets/imagenes/PulseraCartierClavo.jpg" alt="Pulsera de mujer estilo Cartier en oro 18k" tabindex="0">
                 </figure>
             </article>
             <article>
                 <h3>Pulseras de hombre en oro</h3>
                 <p>Esclava de 18k y circonita de 14cm</p>
                 <figure> 
-                    <img src="assets/imagenes/PulseraEsclava.png" alt="Pulsera esclava de oro en 18k con circonita de 14cm" tabindex="1">
+                    <img src="assets/imagenes/PulseraEsclava.png" alt="Pulsera esclava de hombre en oro 18k con circonita" tabindex="1">
                     <figcaption>Esclava de oro con detalle de circonita</figcaption>
                 </figure>
             </article>
@@ -99,7 +108,7 @@
             </figure>
             <p>Segundos aretes de plata</p>
             <figure>
-                <img src="assets/imagenes/AretesGotasPlata.png" alt="Aretes de plata en forma de dos gotitas de agua" tabindex="1">
+                <img src="assets/imagenes/AretesGotasPlata.png" alt="Aretes de plata en forma de gota" tabindex="0">
             </figure>
         </section>
 
@@ -107,12 +116,12 @@
             <h2>Anillos</h2>
             <p>Anillos de oro</p>
             <figure>
-                <img src="assets/imagenes/AnilloDeOroCorazonConDiamantes.jpg" alt="Anillo de oro en forma de corazón con diamantes al rededor en forma de infinito" tabindex="0">
+                <img src="assets/imagenes/AnilloDeOroCorazonConDiamantes.jpg" alt="Anillo de oro en forma de corazón con diamantes" tabindex="0">
             </figure>
 
             <p>Anillos de plata</p>
             <figure>
-                <img src="assets/imagenes/AnilloDePlataConFormaDeCorona.jpg" alt="Anillo de plata con forma de corona formada con hojas que contienen 2 perlitas cada hoja de color plateado" tabindex="0">
+                <img src="assets/imagenes/AnilloDePlataConFormaDeCorona.jpg" alt="Anillo de plata en forma de corona con perlitas" tabindex="0">
             </figure>
         </section>
 
@@ -132,11 +141,11 @@
         <ol>
             <li>
                 Cadena de bolas en 18k<br>
-                <img src="assets/imagenes/CadenaBolas.jpg" alt="Cadena de bolas en 18k" tabindex="0">
+                <img src="assets/imagenes/CadenaBolas.jpg" alt="Cadena de mujer con perla central" tabindex="0">
             </li>
             <li>
                 Pulsera Cartier circular con punta de Clavo en oro de 18k<br>
-                <img src="assets/imagenes/PulseraCartierClavo.jpg" alt="Pulsera Cartier circular en oro de 18k" tabindex="0">
+                <img src="assets/imagenes/PulseraCartierClavo.jpg" alt="Pulsera de mujer estilo Cartier en oro 18k" tabindex="0">
             </li>
             <li>
                 Aretes de plata en forma de corazón<br>
@@ -148,7 +157,7 @@
             </li>
             <li>
                 Anillo de plata con forma de corona formada con hojas que contienen 2 perlitas cada hoja de color plateado<br>
-                <img src="assets/imagenes/AnilloDePlataConFormaDeCorona.jpg" alt="Anillo de plata con forma de corona y perlitas" tabindex="0">
+                <img src="assets/imagenes/AnilloDePlataConFormaDeCorona.jpg" alt="Anillo de plata en forma de corona con perlitas" tabindex="0">
             </li>
         </ol>
 
@@ -197,3 +206,4 @@
     </footer>
 </body>
 </html>
+
