@@ -1,38 +1,38 @@
+ 
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/overrides.css">
     <title>Título de la página</title>
 </head>
 <body>
-    <header>
-        <h1>La josheria</h1>
+    <header class="container">
+        <h1 class="tituloPrincipal">Joyeria de prueba</h1>
     </header>
-    <nav>
+    <nav class="container">
         <ul>
-
-            <li><a href="#seccion1">Conoce a nuestro fundador</a></li>
-            <br>
-            <li><a href="#seccion2">Cadenas de oro para hombre y mujer</a></li>
-            <br>            
-            <li><a href="#seccion3">Pulseras de oro 18k</a></li>
-            <br>            
-            <li><a href="#seccion4">Aretes de plata</a></li>
-            <br>            
-            <li><a href="#seccion5">Anillos de oro y plata</a></li>
-            <br>
+            <li><a href="#Fundador">Sección 1</a></li>
+            <li><a href="#Cadenas">Sección 2</a></li>
+            <li><a href="#PulserasOro">Sección 3</a></li>
+            <li><a href="#AretesPlata">Sección 4</a></li>
+            <li><a href="#Anillos">Sección 5</a></li>
             <li><a href="https://www.youtube.com/watch?v=4yAdJv3y_wo&list=RD4yAdJv3y_wo&start_radio=1&ab_channel=ShakuQuil%2FLilQuil" target="_blank" rel="noopener noreferrer">Contenido especial</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="container">
         <aside>
-            <h2>Si desea apartar un artículo, por favor contacte al número que aparece</h2>
-            <p>Teléfono 8851-0748</p>
-            <p>Nuestro horario es de 8am a 6pm</p>
+            <h2 style="font-weight: bold;">Si desea apartar un artículo, por favor contacte al número que aparece</h2>
+            <p style="font-weight: bold;">Teléfono 8851-0748</p>
+            <p style="font-weight: bold;">Nuestro horario es de 8am a 6pm</p>
         </aside>
 
-        <h2>Formulario de registro</h2>
+        <h2 class="tituloSecundario">Formulario de registro</h2>
         <form>
             <div>
                 <label for="nombre">Nombre personal</label>
@@ -59,171 +59,200 @@
             </div>
         
             <div>
-                <button type="submit" aria-label="Enviar formulario de registro">Registrarse</button>
+                <button type="submit" class="btn">Registrarse</button>
             </div>
         </form>
 
 
-
-
-        <section id="seccion1">
-            <h2>Nuestro fundador</h2>
+        <section id="Fundador" data-section="fundador">
+            <h2 class="tituloSecundario">Nuestro fundador</h2>
             <figure>
-                <img src="assets/imagenes/Ariel.png" alt="Ariel el maestro joyero">
+                <img src="assets/imagenes/Ariel.png" alt="Ariel el maestro joyero" class="imagenes" >
             </figure>
-            <p>Ariel el Cubano de las joyas.</p>
-            <p>Ariel empezó como un revendedor de joyeria en los Estados Unidos, al pasar del tiempo vio que el negocio le generaba buenas
-                ganancias y  por lo tanto decidio abrir su primer negocio en el cual le ha ido super bien por ser un caballero muy elegante
-                así que actualmente cuenta con más de 10 joyerias en Estados Unidos y una en Costa Rica, la cual es la que usted está visitando.</p>
+            <span class="tag">Ariel el Cubano de las joyas.</span>
+            <p style="font-size: medium;">
+            Ariel empezó como un revendedor de joyería en los Estados Unidos, al pasar del tiempo vio que el negocio le generaba buenas ganancias y, por lo tanto, decidió abrir su primer negocio en el cual le ha ido súper bien por ser un caballero muy elegante. Actualmente cuenta con más de 10 joyerías en Estados Unidos y una en Costa Rica, la cual es la que usted está visitando. Su pasión por las joyas comenzó desde muy joven, observando los diseños artesanales de su familia y aprendiendo técnicas que hoy son la base de sus creaciones. Con el tiempo, Ariel ha expandido su negocio incorporando tecnología avanzada en el diseño de joyería, creando piezas únicas que combinan tradición y modernidad. Además, ha formado un equipo de expertos que comparten su visión y dedicación, asegurando la calidad en cada detalle. La tienda en Costa Rica también sirve como centro de capacitación para jóvenes interesados en aprender el arte de la joyería, fomentando la creatividad y el emprendimiento local. Entre sus proyectos futuros, Ariel planea lanzar una línea exclusiva de joyas sustentables, utilizando materiales reciclados y promoviendo prácticas éticas en toda la cadena de producción, consolidándose así como un referente en la industria de la joyería a nivel internacional.
             </p>
+
         </section>
 
-        <section id="seccion2">
-            <h2>Cadenas</h2>
-            <article>
-                <h3>Cadenas de mujer en oro</h3>
+        <section id="Cadenas" data-section="cadenas" class="grid">
+            <h2 class="tituloVentas">Cadenas</h2>
+            <article class="card">
+                <h3 >Cadenas de mujer en oro</h3>
+                <p>Cadena de bolas en 18k</p>
+                <span class="badge">Nuevo</span>
                 <figure>
                     <img src="assets/imagenes/CadenaBolas.jpg" alt="Cadena de mujer con perla central" tabindex="0">
                 </figure>
-                <p>Cadena de bolas en 18k</p>
+                
             </article>
-            <article>
+            <article class="card">
                 <h3>Cadenas de hombre</h3>
                 <p>Cadena en cordón chino 13MM</p>
+                <span class="badge">Nuevo</span>
                 <figure>
                     <img src="assets/imagenes/CadenaCordonChino.jpg" alt="Cadena de hombre con grosor de 13MM" tabindex="0">
                 </figure>
             </article>
         </section>
 
-        <section id="seccion3">
-            <h2>Pulseras en oro</h2>
-            <article>
-                <h3>Pulseras de mujer en oro</h3>
-                <p>Pulseras estilo Cartier en 18k</p>
-                <figure>
-                    <img src="assets/imagenes/PulseraCartierClavo.jpg" alt="Pulsera de mujer estilo Cartier en oro 18k" tabindex="0">
-                </figure>
-            </article>
-            <article>
-                <h3>Pulseras de hombre en oro</h3>
-                <p>Esclava de 18k y circonita de 14cm</p>
-                <figure> 
-                    <img src="assets/imagenes/PulseraEsclava.png" alt="Pulsera esclava de hombre en oro 18k con circonita" tabindex="-1">
-                    <figcaption>Esclava de oro con detalle de circonita</figcaption>
-                </figure>
-            </article>
+
+        <section id="PulserasOro" data-section="pulseras-oro">
+            <h2 class="tituloVentasRow">Pulseras en oro</h2>
+            <div class="row">
+                <article class="card">
+                    <h3>Pulseras de mujer en oro</h3>
+                    <p>Pulseras estilo Cartier en 18k</p>
+                    <span class="badge">Nuevo</span>
+                    <figure>
+                        <img src="assets/imagenes/PulseraCartierClavo.jpg" alt="Pulsera de mujer estilo Cartier en oro 18k" tabindex="0">
+                    </figure>
+                </article>
+                <article class="card">
+                    <h3>Pulseras de hombre en oro</h3>
+                    <p>Esclava de 18k y circonita de 14cm</p>
+                    <span class="badge">Nuevo</span>
+                    <figure> 
+                        <img src="assets/imagenes/PulseraEsclava.png" alt="Pulsera esclava de hombre en oro 18k con circonita" tabindex="1">
+                        <figcaption>Esclava de oro con detalle de circonita</figcaption>
+                    </figure>
+                </article>
+            </div>
         </section>
 
-        <section id="seccion4">
-            <h2>Aretes de plata</h2>
-            <p>Aretes de plata.</p>
-            <figure>
-                <img src="assets/imagenes/AretesCorazonPlata.png" alt="Aretes de plata en forma de corazón" tabindex="0">
-            </figure>
-            <p>Segundos aretes de plata</p>
-            <figure>
-                <img src="assets/imagenes/AretesGotasPlata.png" alt="Aretes de plata en forma de gota" tabindex="0">
-            </figure>
+        <section id="AretesPlata" data-section="aretes-plata" >
+            <h2 class="tituloVentasRow">Aretes de plata</h2>
+            <div class="row">
+                <article class="card"> 
+                    <p>Primeros aretes de plata.</p>
+                    <span class="badge">Nuevo</span>
+                    <figure>
+                        <img src="assets/imagenes/AretesCorazonPlata.png" alt="Aretes de plata en forma de corazón" tabindex="0">
+                    </figure>
+                    <p>Aretes de plata.</p>
+                </article>
+
+                <article class="card">
+                    <p>Segundos aretes de plata</p>
+                    <span class="badge">Nuevo</span>
+                    <figure>
+                        <img src="assets/imagenes/AretesGotasPlata.png" alt="Aretes de plata en forma de gota" tabindex="0">
+                    </figure>
+                </article>
+            </div>
         </section>
 
-        <section id="seccion5">
-            <h2>Anillos</h2>
-            <p>Anillos de oro</p>
-            <figure>
-                <img src="assets/imagenes/AnilloDeOroCorazonConDiamantes.jpg" alt="Anillo de oro en forma de corazón con diamantes" tabindex="0">
-            </figure>
+        <section id="Anillos" data-section="anillos">
+            <h2 class="tituloVentasRow">Anillos</h2>
+            <div class="row">
+                <article class="card"> 
+                    <p>Anillos de oro</p>
+                    <span class="badge">Nuevo</span>
+                    <figure>
+                        <img src="assets/imagenes/AnilloDeOroCorazonConDiamantes.jpg" alt="Anillo de oro en forma de corazón con diamantes" tabindex="0">
+                    </figure>
+                </article>
 
-            <p>Anillos de plata</p>
-            <figure>
-                <img src="assets/imagenes/AnilloDePlataConFormaDeCorona.jpg" alt="Anillo de plata en forma de corona con perlitas" tabindex="0">
-            </figure>
+                <article class="card">
+                    <p>Anillos de plata</p>
+                    <span class="badge">Nuevo</span>
+
+                    <figure>
+                        <img src="assets/imagenes/AnilloDePlataConFormaDeCorona.jpg" alt="Anillo de plata en forma de corona con perlitas" tabindex="0">
+                    </figure>
+                </article>
+            </div>
         </section>
 
+        <section id="OpinionesClientes" data-section="opiniones-clientes" class="quote"> 
         <h2>Opiniones de nuestros clientes</h2>
         <blockquote>
             "Solo calidad y con la mejor atención  siempre"
-            <br>
-            <cite>- Fabian Rojas</cite>
+            <cite> Fabian Rojas</cite>
         </blockquote>
         <blockquote>
             "Los mejores del town, siempre poniendo a brillar a la gente"
-            <br>
-            <cite>- El weso</cite>
+            <cite> El weso</cite>
         </blockquote>
+        </section>
 
+        <section id="seccion7"> 
         <h2>Productos más vendidos</h2>
-        <ol>
-            <li>
-                Cadena de bolas en 18k<br>
-                <img src="assets/imagenes/CadenaBolas.jpg" alt="Cadena de mujer con perla central" tabindex="0">
+        <ol class="row">
+            <li class="card">
+                Cadena de bolas en 18k
+                <span class="badge">Top 1</span>
+                <img src="assets/imagenes/CadenaBolas.jpg" alt="Cadena de mujer con perla central" tabindex="0" class="imgMVP">
             </li>
-            <li>
-                Pulsera Cartier circular con punta de Clavo en oro de 18k<br>
-                <img src="assets/imagenes/PulseraCartierClavo.jpg" alt="Pulsera de mujer estilo Cartier en oro 18k" tabindex="0">
+            <li class="card">
+                Pulsera Cartier circular con punta de Clavo en oro de 18k
+                <span class="badge">Top 2</span>
+                <img src="assets/imagenes/PulseraCartierClavo.jpg" alt="Pulsera de mujer estilo Cartier en oro 18k" tabindex="0" class="imgMVP">
             </li>
-            <li>
-                Aretes de plata en forma de corazón<br>
-                <img src="assets/imagenes/AretesCorazonPlata.png" alt="Aretes de plata en forma de corazón" tabindex="0">
+            <li class="card">
+                Aretes de plata en forma de corazón
+                <span class="badge">Top 3</span>
+                <img src="assets/imagenes/AretesCorazonPlata.png" alt="Aretes de plata en forma de corazón" tabindex="0" class="imgMVP">
             </li>
-            <li>
-                Anillo de oro en forma de corazón con diamantes al rededor en forma de infinito<br>
-                <img src="assets/imagenes/AnilloDeOroCorazonConDiamantes.jpg" alt="Anillo de oro en forma de corazón con diamantes" tabindex="0">
+            <li class="card">
+                Anillo de oro en forma de corazón con diamantes al rededor en forma de infinito
+                <span class="badge">Top 4</span>
+                <img src="assets/imagenes/AnilloDeOroCorazonConDiamantes.jpg" alt="Anillo de oro en forma de corazón con diamantes" tabindex="0" class="imgMVP">
             </li>
-            <li>
-                Anillo de plata con forma de corona formada con hojas que contienen 2 perlitas cada hoja de color plateado<br>
-                <img src="assets/imagenes/AnilloDePlataConFormaDeCorona.jpg" alt="Anillo de plata en forma de corona con perlitas" tabindex="0">
+            <li class="card">
+                Anillo de plata con forma de corona formada con hojas que contienen 2 perlitas cada hoja de color plateado
+                <span class="badge">Top 5</span>
+                <img src="assets/imagenes/AnilloDePlataConFormaDeCorona.jpg" alt="Anillo de plata en forma de corona con perlitas" tabindex="0" class="imgMVP">
             </li>
         </ol>
+        </section>
 
-        <h2>Tarifas de envío</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Zona</th>
-                    <th>Costo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>San José</td>
-                    <td>₡2,000</td>
-                </tr>
-                <tr>
-                    <td>Alajuela</td>
-                    <td>₡2,500</td>
-                </tr>
-                <tr>
-                    <td>Heredia</td>
-                    <td>₡2,500</td>
-                </tr>
-                <tr>
-                    <td>Limón</td>
-                    <td>₡2000</td>
-                </tr>
-                <tr>
-                    <td>Cartago</td>
-                    <td>₡2,500</td>
-                </tr>
-                <tr>
-                    <td>Guanacaste</td>
-                    <td>₡3,500</td>
-                </tr>
-                <tr>
-                    <td>Puntarenas</td>
-                    <td>₡3,500</td>
-                </tr>
-            </tbody>
-        </table>
+
+        <section id="seccion8">  
+            <h2>Tarifas de envío</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Zona</th>
+                        <th>Costo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>San José</td>
+                        <td>₡2,000</td>
+                    </tr>
+                    <tr>
+                        <td>Alajuela</td>
+                        <td>₡2,500</td>
+                    </tr>
+                    <tr>
+                        <td>Heredia</td>
+                        <td>₡2,500</td>
+                    </tr>
+                    <tr>
+                        <td>Limón</td>
+                        <td>₡2000</td>
+                    </tr>
+                    <tr>
+                        <td>Cartago</td>
+                        <td>₡2,500</td>
+                    </tr>
+                    <tr>
+                        <td>Guanacaste</td>
+                        <td>₡3,500</td>
+                    </tr>
+                    <tr>
+                        <td>Puntarenas</td>
+                        <td>₡3,500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
-    <footer>
+    <footer  class="container">
         <p>© 2025 Mi Sitio Web</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
-

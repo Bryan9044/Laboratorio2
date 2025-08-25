@@ -1,0 +1,78 @@
+.container {
+  background: linear-gradient(90deg, #f5f2f2, #8adbfe);
+  padding: 15px 30px;
+  border-radius: 0px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+
+.row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+ input {
+  width: 220px;
+  padding: 0.4em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  width: 220px;         
+  padding: 0.5em;       
+  margin-bottom: 1em;
+}
+
+select {
+  width: 220px;
+  padding: 0.4em;
+  border: 1px solid #6f858e;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 220px;
+  height: 100px;
+  padding: 0.4em;
+  border: 1px solid #6f858e;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  resize: none;
+}
+form > div {
+  display: flex;
+  flex-direction: column; 
+}
+
+img[alt="Ariel el maestro joyero"] {
+  border: 2px solid #000000;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
