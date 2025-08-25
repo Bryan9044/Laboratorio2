@@ -6,6 +6,7 @@
   width: 1400px;       
   height: 1000px;   
   overflow: auto;   
+
   margin: 0;
 }
 
@@ -49,9 +50,6 @@ blockquote + blockquote {
 
 
 
-ul li a:active {
-    color: rgb(220, 165, 28);
-}
 
 
 /*Pseudo clase estructural*/
@@ -70,10 +68,9 @@ h2:not(.tituloSecundario) {
     opacity: 0.83;
 }
 
-
-.container aside  {
-  padding: 10px !important;
-  font-style: bold !important;
+.container p {
+    padding: 10px !important;
+    font-weight: bold !important; 
 }
 
 
@@ -97,7 +94,7 @@ nav.container ul li a {
 }
 
 nav.container ul li a:hover {
-    background: #d8f77c;
+    background: #d3fdf0;
     color: #111;
     transform: scale(1.05);
 }
@@ -164,4 +161,21 @@ nav.container ul li a:hover {
   border-radius: 8px;
   margin: 0 auto;
   
+}
+
+a[href*="youtube.com/watch?v=4yAdJv3y_wo"] {
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: oblique;
+}
+
+
+.card img:focus-visible {
+  outline: 3px solid rgb(238, 249, 207); 
+  border-radius: 10px;
+}
+
+
+ul li a:active {
+    font-style:normal
 }
