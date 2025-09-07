@@ -1,0 +1,242 @@
+.card {
+  background: white;
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+
+.tituloPrincipal {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(61, 65, 73);
+}
+
+.imagenes {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.tituloSecundario {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.imgMvp {
+  box-sizing: border-box;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  max-width: 100%;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #ebe5e5;
+  background-color: #363530;
+  border-radius: 12px;
+}
+
+.badge {
+  display: inline-block;       
+  padding: 0.25em 0.6em;      
+  font-size: 0.8rem;           
+  font-weight: bold;           
+  color: fff;                
+  background-color: #E5E7EB;  
+  color: #384f58;
+  border: 1px solid #ccf2f7;
+
+  border-radius: 12px;         
+  position: absolute;          
+  top: 10px;                   
+  right: 10px;                 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+}
+
+
+/* el estilo del  boton lo saque de aquí https://getcssscan.com/css-buttons-examples */
+.btn {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #1c1d1d, #586c92);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px; /* más cómodo en móvil */
+  line-height: 20px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;     
+  max-width: 200px; 
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+  box-sizing: border-box;
+}
+
+
+.tituloVentas {
+  font-size: 1.55rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  grid-column: 1 / -1; 
+}
+.tituloVentasRow {
+    font-size: 1.55rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center; 
+    width: 100%;         
+    margin: 0 auto 1rem auto; 
+    display: block;      
+    order: -1;
+}
+
+
+
+.btn:hover {
+  box-shadow: rgba(15, 104, 155, 0.5) 0 3px 8px;
+}
+
+ul li {
+    margin-bottom: 10px; 
+}
+
+
+
+
+.quote {
+  display: inline-block;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.quote blockquote {
+  background-color: #fff;
+  border: solid 2px #757575;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+
+
+.quote blockquote cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+
+.quote blockquote cite:before {
+  content: "- ";
+}
+
+.quote blockquote > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+/*Esto es del menú hamburguesa */
+
+    nav {
+      background: #222;
+      color: rgb(0, 0, 0);
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    #menu-toggle {
+      display: none;
+    }
+
+    /* Botón hamburguesa */
+    .hamburger {
+      font-size: 28px;
+      cursor: pointer;
+      user-select: none;
+      display: block;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #333;
+      position: absolute;
+      top: 60px;
+      right: 15px;
+      padding: 10px;
+      border-radius: 8px;
+      min-width: 200px;
+    }
+
+    .nav-links a {
+      color: rgb(4, 0, 0);
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    .nav-links a:hover {
+    border-bottom: 2px solid #222; 
+    padding-bottom: 5px;          
+    display: inline-block; 
+    }
+
+    /* Mostrar menú cuando el checkbox está activado (móvil) */
+    #menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+      }
+      .nav-links a {
+        padding: 0 15px;
+      }
+
+      .hamburger {
+        display: none;
+      }
+    }
